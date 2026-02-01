@@ -1,0 +1,72 @@
+/* UNIVERSAL STYLING */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Figma colors and fonts */
+:root {
+  /* color */
+  --color-gray: #5c5c5c;
+  --color-red: #ff0000;
+  --color-header-bg: #fbf1e9;
+  --color-page-bg: #f8f9fa;
+
+  /* text  */
+  --txt-h1: 40px;
+  --txt-h3: 26px;
+  --txt-form-input: 22px;
+  --txt-created-by: 20px;
+  --txt-link: 1.2rem;
+}
+
+/* Apply variables from figma */
+.h1-txt {
+  font-size: var(--txt-h1);
+}
+
+.h3-txt {
+  font-size: var(--txt-h3);
+}
+
+.btn-input-form-text {
+  font-size: var(--txt-form-input);
+}
+
+.links-txt {
+  font-size: var(--txt-link);
+}
+
+.created-by {
+  font-size: var(--txt-created-by);
+}
+
+.grey-color {
+  color: var(--color-gray);
+}
+.red-color {
+  color: var(--color-red);
+}
+
+.header-bg {
+  background-color: var(--color-header-bg);
+}
+
+/* ------------------------------- */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-page-bg);
+}
+
+#brand {
+  max-width: 4rem;
+}
+
+.actionsImg {
+  width: 2rem;
+}
+
+.nav-shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

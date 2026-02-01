@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Homepage</title>
+
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-light">
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="py-4 shadow">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <!-- MOBILE: LOGO -->
+            <div class="col-6 d-lg-none d-flex align-items-center">
+              <a href="#">
+                <img class="actionsImg" src="img/logo.png" alt="ModernLogo" />
+              </a>
+            </div>
+
+            <!-- MOBILE: HAMBURGER -->
+            <div
+              class="col-6 d-lg-none d-flex align-items-center justify-content-end"
+            >
+              <button
+                class="btn fs-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobileMenu"
+                aria-label="Toggle menu"
+              >
+                ☰
+              </button>
+            </div>
+
+            <!-- DESKTOP: LEFT (LOGO + LINKS) -->
+            <div class="col-lg-8 d-none d-lg-flex align-items-center gap-5">
+              <!-- LOGO -->
+              <a href="#">
+                <img src="img/logo.png" alt="ModernLogo" id="brand" />
+              </a>
+
+              <!-- NAV LINKS -->
+              <ul class="d-flex gap-4 mb-0 list-unstyled">
+                <li>
+                  <a class="text-decoration-none text-dark h6" href="#">Home</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark h6" href="#">Shop</a>
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark h6" href="#"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark h6" href="#"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-danger h6" href="#"
+                    >Sale!</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- DESKTOP: RIGHT (SEARCH + ICONS) -->
+            <div
+              class="col-lg-4 d-none d-lg-flex justify-content-end align-items-center gap-4"
+            >
+              <input
+                id="search-input"
+                class="form-control form-control-sm py-2 text-end"
+                type="text"
+                placeholder="Search"
+              />
+              <a href="checkoutPage.html">
+                <img class="actionsImg" src="img/cart_logo.png" />
+              </a>
+              <a href="#">
+                <img class="actionsImg" src="img/user_logo.png" />
+              </a>
+            </div>
+          </div>
+
+          <!-- MOBILE MENU -->
+          <div class="collapse d-lg-none mt-3" id="mobileMenu">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="shopPage.html"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="#"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-danger h5"
+                  href="#"
+                  >Sale!</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="container py-5">
+      <h1 class="text-center mb-5">Checkout</h1>
+
+      <div class="row g-4">
+        <!-- SHIPPING + PAYMENT -->
+        <div class="col-12 col-lg-6">
+          <form class="bg-white p-4 rounded shadow-lg">
+            <h5 class="mb-4">Shipping Information</h5>
+
+            <div class="row g-3">
+              <div class="col-12 col-lg-6">
+                <label for="firstName" class="form-label h6">First Name</label>
+                <input
+                  id="firstName"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="col-12 col-lg-6">
+                <label for="lastName" class="form-label h6">Last Name</label>
+                <input
+                  id="lastName"
+                  type="text"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label h6">Address</label>
+                <input id="address" type="text" class="form-control" required />
+              </div>
+
+              <div class="col-12">
+                <label for="apartment" class="form-label h6"
+                  >Apartment, suite, etc.</label
+                >
+                <input id="apartment" type="text" class="form-control" />
+              </div>
+
+              <div class="col-12 col-lg-4">
+                <label for="country" class="form-label h6">Country</label>
+                <select id="country" class="form-select">
+                  <option value="Romania">Romania</option>
+                  <option value="France">France</option>
+                  <option value="USA">USA</option>
+                </select>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                <label for="city" class="form-label h6">City</label>
+                <select id="city" class="form-select">
+                  <option value="Facaeni">Facaeni</option>
+                  <option value="Slobozia">Facaeni</option>
+                  <option value="Bucuresti">Bucuresti</option>
+                </select>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                <label for="zip" class="form-label h6">Zipcode</label>
+                <select id="zip" class="form-select">
+                  <option value="927110">927110</option>
+                </select>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    id="saveInfo"
+                    type="checkbox"
+                    class="form-check-input"
+                  />
+                  <label for="saveInfo" class="form-check-label">
+                    Save contact information
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4" />
+
+            <h5 class="mb-3">Payment Information</h5>
+
+            <div class="d-flex flex-column flex-lg-row gap-2 mb-3">
+              <button type="button" class="btn btn-outline-dark flex-fill">
+                <img src="img/PayPal.png" height="20" />
+              </button>
+              <button type="button" class="btn btn-dark flex-fill fs-5">
+                Cash
+              </button>
+            </div>
+
+            <div class="mb-3">
+              <label for="cardName" class="form-label h6"
+                >Cardholder Name</label
+              >
+              <input id="cardName" type="text" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+              <label for="cardNumber" class="form-label h6">Card Number</label>
+              <input id="cardNumber" type="text" class="form-control" />
+            </div>
+
+            <div class="row g-3">
+              <div class="col-12 col-lg-4">
+                <label class="form-label h6">Month</label>
+                <select class="form-select"></select>
+              </div>
+              <div class="col-12 col-lg-4">
+                <label class="form-label h6">Year</label>
+                <select class="form-select"></select>
+              </div>
+              <div class="col-12 col-lg-4">
+                <label class="form-label h6">CVC</label>
+                <input type="number" class="form-control" />
+              </div>
+            </div>
+
+            <button class="btn btn-dark w-100 mt-4 fs-5">Pay</button>
+          </form>
+        </div>
+
+        <!-- ORDER SUMMARY -->
+        <div class="col-12 col-lg-6">
+          <div class="bg-white p-4 rounded shadow-lg">
+            <h5 class="mb-4">Review your cart</h5>
+
+            <div class="d-flex gap-3 pb-3 mb-3 border-bottom">
+              <img
+                src="img/elliptical-machine.jpg"
+                width="70"
+                class="rounded"
+              />
+              <div class="flex-grow-1">
+                <p class="h6">Elliptical Machine</p>
+                <div
+                  class="d-flex justify-content-between align-items-center col-3 border rounded px-2"
+                >
+                  <span class="h5">-</span>
+                  <span class="h6">1</span>
+                  <span class="h5">+</span>
+                </div>
+              </div>
+              <strong>$1700</strong>
+            </div>
+
+            <div class="d-flex gap-3 pb-3 mb-3 border-bottom">
+              <img src="img/board_pushup.jpg" width="70" class="rounded" />
+              <div class="flex-grow-1">
+                <p class="fw-semibold mb-1">Push Ups Board</p>
+                <div
+                  class="d-flex justify-content-between align-items-center col-3 border rounded px-2"
+                >
+                  <span class="h5">-</span>
+                  <span class="h6">1</span>
+                  <span class="h5">+</span>
+                </div>
+              </div>
+              <strong>$40</strong>
+            </div>
+
+            <div class="d-flex gap-3 pb-3 mb-3 border-bottom">
+              <img src="img/elastic-band.jpg" width="70" class="rounded" />
+              <div class="flex-grow-1">
+                <p class="fw-semibold mb-1">Elastic Band</p>
+                <div
+                  class="d-flex justify-content-between align-items-center col-3 border rounded px-2"
+                >
+                  <span class="h5">-</span>
+                  <span class="h6">1</span>
+                  <span class="h5">+</span>
+                </div>
+              </div>
+              <strong>$20</strong>
+            </div>
+
+            <div class="d-flex gap-3 pb-3 mb-3 border-bottom">
+              <img src="img/dumbbells.jpeg" width="70" class="rounded" />
+              <div class="flex-grow-1">
+                <p class="fw-semibold mb-1">Dumbbells</p>
+                <div
+                  class="d-flex justify-content-between align-items-center col-3 border rounded px-2"
+                >
+                  <span class="h5">-</span>
+                  <span class="h6">1</span>
+                  <span class="h5">+</span>
+                </div>
+              </div>
+              <strong>$175</strong>
+            </div>
+
+            <div class="d-flex gap-3 pb-3 mb-3 border-bottom">
+              <img src="img/band.jpg" width="70" class="rounded" />
+              <div class="flex-grow-1">
+                <p class="fw-semibold mb-1">Band</p>
+                <div
+                  class="d-flex justify-content-between align-items-center col-3 border rounded px-2"
+                >
+                  <span class="h5">-</span>
+                  <span class="h6">1</span>
+                  <span class="h5">+</span>
+                </div>
+              </div>
+              <strong>$2000</strong>
+            </div>
+
+            <div class="d-flex justify-content-between fw-bold">
+              <span>Total</span>
+              <span>$3 935</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container-fluid p-4 shadow-lg">
+        <!-- TOP FOOTER -->
+        <div class="row">
+          <!-- LEFT -->
+          <div class="col-12 col-md-6 col-lg-4 text-start">
+            <h4>SHOP</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5">Dresses</li>
+              <li class="fs-5">Jackets</li>
+              <li class="fs-5">Skirts</li>
+              <li class="fs-5">Shoes & Bags</li>
+              <li class="fs-5">Gift Cards</li>
+              <li class="fs-5">Sales & Offers</li>
+            </ul>
+          </div>
+
+          <!-- CENTER -->
+          <div class="col-12 col-md-6 col-lg-4 text-md-start text-lg-center">
+            <h4>INFORMATION</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5">About</li>
+              <li class="fs-5">Terms & Conditions</li>
+              <li class="fs-5">Privacy Policy</li>
+              <li class="fs-5">Delivery & Return</li>
+            </ul>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-12 col-md-6 col-lg-4 text-md-start text-lg-end">
+            <h4>CUSTOMER SUPPORT</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5">Contact</li>
+              <li class="fs-5">Help</li>
+              <li class="fs-5">FAQ</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- BOTTOM FOOTER -->
+        <div class="row align-items-center">
+          <p class="col-12 col-lg-6 text-center text-lg-start">
+            Designed and developed by <strong>&copy; taica_rullz</strong>
+          </p>
+
+          <ul
+            class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end gap-4 list-unstyled"
+          >
+            <li><img src="img/facebook.png" width="22" /></li>
+            <li><img src="img/instagram.png" width="22" /></li>
+            <li><img src="img/tik-tok.png" width="22" /></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS File -->
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

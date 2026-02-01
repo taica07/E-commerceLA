@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Homepage</title>
+
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="py-4 nav-shadow header-bg">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <!-- ================= MOBILE HEADER ================= -->
+
+            <!-- MOBILE: LEFT (HAMBURGER + SEARCH) -->
+            <div class="col-4 d-lg-none d-flex align-items-center gap-3">
+              <!-- HAMBURGER -->
+              <button
+                class="btn fs-1 p-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobileMenu"
+                data-bs-dismiss="collapse"
+                aria-label="Toggle menu"
+              >
+                ☰
+              </button>
+
+              <!-- SEARCH ICON -->
+              <button
+                class="btn fs-3 p-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobileSearch"
+                data-bs-dismiss="collapse"
+                aria-label="Search"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+
+            <!-- MOBILE: CENTER (LOGO) -->
+            <div
+              class="col-4 d-lg-none d-flex justify-content-center align-items-center"
+            >
+              <a href="#">
+                <img class="actionsImg" src="img/logo.png" alt="ModernLogo" />
+              </a>
+            </div>
+
+            <!-- MOBILE: RIGHT (CART + USER) -->
+            <div
+              class="col-4 d-lg-none d-flex justify-content-end align-items-center gap-3"
+            >
+              <a href="checkoutPage.html">
+                <img class="actionsImg" src="img/cart_logo.png" alt="Cart" />
+              </a>
+              <a href="#">
+                <img class="actionsImg" src="img/user_logo.png" alt="User" />
+              </a>
+            </div>
+
+            <!-- ================= DESKTOP HEADER ================= -->
+
+            <!-- DESKTOP: LEFT (LOGO + LINKS) -->
+            <div class="col-lg-8 d-none d-lg-flex align-items-center gap-5">
+              <!-- LOGO -->
+              <a href="#">
+                <img src="img/logo.png" alt="ModernLogo" id="brand" />
+              </a>
+
+              <!-- NAV LINKS -->
+              <ul class="d-flex gap-4 mb-0 list-unstyled">
+                <li>
+                  <a class="text-decoration-none text-dark links-txt" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark links-txt" href="#"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark links-txt" href="#"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-dark links-txt" href="#"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a class="text-decoration-none text-danger links-txt" href="#"
+                    >Sale!</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- DESKTOP: RIGHT (SEARCH + ICONS) -->
+            <div
+              class="col-lg-4 d-none d-lg-flex justify-content-end align-items-center gap-4"
+            >
+              <input
+                id="search-input"
+                class="form-control form-control-sm py-2 text-end header-bg border border-secondary rounded header-bg"
+                type="text"
+                placeholder="Search"
+              />
+              <a href="checkoutPage.html">
+                <img class="actionsImg" src="img/cart_logo.png" alt="Cart" />
+              </a>
+              <a href="#">
+                <img class="actionsImg" src="img/user_logo.png" alt="User" />
+              </a>
+            </div>
+          </div>
+
+          <!-- MOBILE MENU -->
+          <div class="collapse d-lg-none mt-3" id="mobileMenu">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="shopPage.html"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="#"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="#"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-danger h5"
+                  href="#"
+                  >Sale!</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- MOBILE SEARCH -->
+          <div class="collapse d-lg-none mt-3" id="mobileSearch">
+            <input
+              type="text"
+              class="form-control py-2 border border-secondary rounded header-bg"
+              placeholder="Search products..."
+            />
+          </div>
+          <!-- ------ -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container-fluid p-4 shadow-lg">
+        <!-- TOP FOOTER -->
+        <div class="row">
+          <!-- LEFT -->
+          <div class="col-12 col-md-6 col-lg-4 text-start">
+            <h4>SHOP</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5">Dresses</li>
+              <li class="fs-5">Jackets</li>
+              <li class="fs-5">Skirts</li>
+              <li class="fs-5">Shoes & Bags</li>
+              <li class="fs-5">Gift Cards</li>
+              <li class="fs-5">Sales & Offers</li>
+            </ul>
+          </div>
+
+          <!-- CENTER -->
+          <div class="col-12 col-md-6 col-lg-4 text-md-start text-lg-center">
+            <h4>INFORMATION</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5">About</li>
+              <li class="fs-5">Terms & Conditions</li>
+              <li class="fs-5">Privacy Policy</li>
+              <li class="fs-5">Delivery & Return</li>
+            </ul>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-12 col-md-6 col-lg-4 text-md-start text-lg-end">
+            <h4>CUSTOMER SUPPORT</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5">Contact</li>
+              <li class="fs-5">Help</li>
+              <li class="fs-5">FAQ</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <!-- BOTTOM FOOTER -->
+        <div class="row align-items-center">
+          <p class="col-12 col-lg-6 text-center text-lg-start">
+            Designed and developed by <strong>&copy; taica_rullz</strong>
+          </p>
+
+          <ul
+            class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end gap-4 list-unstyled"
+          >
+            <li><img src="img/facebook.png" width="22" /></li>
+            <li><img src="img/instagram.png" width="22" /></li>
+            <li><img src="img/tik-tok.png" width="22" /></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS File -->
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
