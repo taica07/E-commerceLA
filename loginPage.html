@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Login Page</title>
+
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body class="bg-light">
+    <!-- HEADER -->
+    <header id="header">
+      <nav class="py-4 nav-shadow header-bg">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <!-- ================= MOBILE HEADER ================= -->
+
+            <!-- MOBILE: LEFT (HAMBURGER + SEARCH) -->
+            <div class="col-4 d-lg-none d-flex align-items-center gap-3">
+              <!-- HAMBURGER -->
+              <button
+                class="btn fs-1 p-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobileMenu"
+                data-bs-dismiss="collapse"
+                aria-label="Toggle menu"
+              >
+                ☰
+              </button>
+
+              <!-- SEARCH ICON -->
+              <button
+                class="btn fs-3 p-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mobileSearch"
+                data-bs-dismiss="collapse"
+                aria-label="Search"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+
+            <!-- MOBILE: CENTER (LOGO) -->
+            <div
+              class="col-4 d-lg-none d-flex justify-content-center align-items-center"
+            >
+              <a href="index.html">
+                <img class="actionsImg" src="img/logo.png" alt="ModernLogo" />
+              </a>
+            </div>
+
+            <!-- MOBILE: RIGHT (CART + USER) -->
+            <div
+              class="col-4 d-lg-none d-flex justify-content-end align-items-center gap-3"
+            >
+              <a href="cartPage.html">
+                <img class="actionsImg" src="img/cart_logo.png" alt="Cart" />
+              </a>
+              <a href="loginPage.html">
+                <img class="actionsImg" src="img/user_logo.png" alt="User" />
+              </a>
+            </div>
+
+            <!-- ================= DESKTOP HEADER ================= -->
+
+            <!-- DESKTOP: LEFT (LOGO + LINKS) -->
+            <div class="col-lg-8 d-none d-lg-flex align-items-center gap-5">
+              <!-- LOGO -->
+              <a href="index.html">
+                <img src="img/logo.png" alt="ModernLogo" id="brand" />
+              </a>
+
+              <!-- NAV LINKS -->
+              <ul class="d-flex gap-4 mb-0 list-unstyled">
+                <li>
+                  <a
+                    class="text-decoration-none text-dark links-txt"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-dark links-txt"
+                    href="shopPage.html"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-dark links-txt"
+                    href="aboutUsPage.html"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-dark links-txt"
+                    href="contactPage.html"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="text-decoration-none text-danger links-txt"
+                    href="salePage.html"
+                    >Sale!</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- DESKTOP: RIGHT (SEARCH + ICONS) -->
+            <div
+              class="col-lg-4 d-none d-lg-flex justify-content-end align-items-center gap-4"
+            >
+              <input
+                id="search-input"
+                class="form-control form-control-sm py-2 text-end header-bg border border-secondary rounded header-bg"
+                type="text"
+                placeholder="Search"
+              />
+              <a href="cartPage.html">
+                <img class="actionsImg" src="img/cart_logo.png" alt="Cart" />
+              </a>
+              <a href="loginPage.html">
+                <img class="actionsImg" src="img/user_logo.png" alt="User" />
+              </a>
+            </div>
+          </div>
+
+          <!-- MOBILE MENU -->
+          <div class="collapse d-lg-none mt-3" id="mobileMenu">
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="shopPage.html"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="aboutUsPage.html"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-dark h5"
+                  href="contactPage.html"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a
+                  class="d-block py-2 text-decoration-none text-danger h5"
+                  href="salePage.html"
+                  >Sale!</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- MOBILE SEARCH -->
+          <div class="collapse d-lg-none mt-3" id="mobileSearch">
+            <input
+              type="text"
+              class="form-control py-2 border border-secondary rounded header-bg"
+              placeholder="Search products..."
+            />
+          </div>
+          <!-- ------ -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+
+    <main class="py-5 my-5">
+      <section>
+        <h1 class="text-center mb-4">Login</h1>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+              <div class="bg-light p-5 rounded shadow-lg">
+                <!-- 👆 padding here -->
+
+                <form>
+                  <div class="mb-4">
+                    <label class="form-label btn-input-form-text">Email</label>
+                    <input
+                      type="email"
+                      class="form-control bg-light border border-dark"
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="form-label btn-input-form-text"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control bg-light border border-dark"
+                    />
+                  </div>
+
+                  <div
+                    class="d-flex flex-column flex-md-column flex-lg-row gap-2 justify-content-between align-items-center mb-4"
+                  >
+                    <div class="d-flex align-items-center gap-2 form-check">
+                      <input
+                        class="form-check-input p-2 border border-dark"
+                        type="checkbox"
+                        id="remember"
+                      />
+                      <label class="form-check-label links-txt" for="remember">
+                        Remember me
+                      </label>
+                    </div>
+                    <a class="text-secondary links-txt" href="#"
+                      >Forgot password?</a
+                    >
+                  </div>
+
+                  <button
+                    class="btn btn-dark w-100 py-2 mb-3 btn-input-form-text"
+                  >
+                    LOGIN
+                  </button>
+
+                  <p class="text-center">
+                    Or
+                    <a class="text-dark links-txt" href="registerPage.html"
+                      >Create an Account</a
+                    >
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- MAIN END -->
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container-fluid p-4 px-5 shadow-lg">
+        <!-- TOP FOOTER -->
+        <div class="row">
+          <!-- LEFT -->
+          <div class="col-12 col-md-6 col-lg-4 text-start">
+            <h4>SHOP</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5 grey-color">Dresses</li>
+              <li class="fs-5 grey-color">Jackets</li>
+              <li class="fs-5 grey-color">Skirts</li>
+              <li class="fs-5 grey-color">Shoes & Bags</li>
+              <li class="fs-5 grey-color">Gift Cards</li>
+              <li class="fs-5 grey-color">Sales & Offers</li>
+            </ul>
+          </div>
+
+          <!-- CENTER -->
+          <div class="col-12 col-md-6 col-lg-4 text-md-start text-lg-center">
+            <h4>INFORMATION</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5 grey-color">About</li>
+              <li class="fs-5 grey-color">Terms & Conditions</li>
+              <li class="fs-5 grey-color">Privacy Policy</li>
+              <li class="fs-5 grey-color">Delivery & Return</li>
+            </ul>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="col-12 col-md-6 col-lg-4 text-md-start text-lg-end">
+            <h4>CUSTOMER SUPPORT</h4>
+            <ul class="list-unstyled">
+              <li class="fs-5 grey-color">Contact</li>
+              <li class="fs-5 grey-color">Help</li>
+              <li class="fs-5 grey-color">FAQ</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="row align-items-center">
+          <p class="col-12 col-lg-6 text-center text-lg-start">
+            Designed and developed by <strong>&copy; taica_rullz</strong>
+          </p>
+
+          <ul
+            class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end gap-4 list-unstyled"
+          >
+            <li><img src="img/facebook.png" width="22" /></li>
+            <li><img src="img/instagram.png" width="22" /></li>
+            <li><img src="img/tik-tok.png" width="22" /></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JS File -->
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
