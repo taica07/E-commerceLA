@@ -194,192 +194,290 @@
     </header>
 
     <!-- MAIN -->
-    <main id="main">
-      <section class="shop_section">
-        <h1>VIEW ALL PRODUCTS</h1>
-        <div class="shop_container">
-          <aside class="filter">
-            <h3>Filters</h3>
-            <!-- PRICE -->
-            <div class="filter_group">
-              <div class="filter_header">
-                <span class="filter_title">Price </span>
-                <span class="arrow"> ⌄</span>
+    <main class="container-fluid p-5 my-5">
+      <!-- TITLE -->
+      <h1 class="text-center mb-4">View All Products</h1>
+
+      <div class="row">
+        <!-- FILTERS (LEFT) -->
+        <aside class="col-12 col-lg-3 mb-4 h4">
+          <div class="border rounded p-3">
+            <h3 class="mb-5">Filters</h3>
+
+            <div class="mb-3">
+              <strong>Price</strong>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">$0 – $50</label>
               </div>
-
-              <div class="filter_content">
-                <label><input type="checkbox" /> $0 – $50</label>
-                <label><input type="checkbox" /> $50 – $100</label>
-                <label><input type="checkbox" /> $100 – $500</label>
-                <label><input type="checkbox" /> $500 – $1000</label>
-
-                <label><input type="checkbox" /> $1000+</label>
-              </div>
-            </div>
-
-            <!-- BRAND -->
-            <div class="filter_group">
-              <div class="filter_header">
-                <span class="filter_title">Brand</span>
-                <span class="arrow">⌄</span>
-              </div>
-
-              <div class="filter_content">
-                <label><input type="checkbox" /> GymShark </label>
-                <label><input type="checkbox" /> GymBeam</label>
-                <label><input type="checkbox" /> GymKing</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">$50 – $100</label>
               </div>
             </div>
 
-            <!-- CATEGORIES -->
-            <div class="filter_group">
-              <div class="filter_header">
-                <span class="filter_title">Collection</span>
-                <span class="arrow">⌄</span>
+            <div class="mb-3">
+              <strong>Brand</strong>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">ZARA</label>
               </div>
-
-              <div class="filter_content">
-                <label><input type="checkbox" /> Adjustable Dumbbels</label>
-                <label><input type="checkbox" /> Adjustable Benches</label>
-                <label><input type="checkbox" /> PullUp Bars</label>
-                <label
-                  ><input type="checkbox" /> Mobility Fitness Equipment</label
-                >
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">H & M</label>
               </div>
-            </div>
-
-            <div class="filter_group">
-              <div class="filter_header">
-                <span class="filter_title">Categories</span>
-                <span class="arrow">⌄</span>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">BERSHKA</label>
               </div>
-
-              <div class="filter_content">
-                <label><input type="checkbox" /> Home Gym Begginner</label>
-                <label><input type="checkbox" /> Home Gym Intermediate</label>
-                <label><input type="checkbox" /> Home Gym Pro</label>
-                <label><input type="checkbox" /> Home Gym Ultra</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">KOTON</label>
               </div>
             </div>
 
-            <div class="filter_group">
-              <div class="filter_header">
-                <span class="filter_title">Colors </span>
-                <span class="arrow"> ⌄</span>
+            <div class="mb-3">
+              <strong>Categories</strong>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Fleece</label>
               </div>
-
-              <div class="filter_content">
-                <label><input type="checkbox" /> Black</label>
-                <label><input type="checkbox" /> White</label>
-                <label><input type="checkbox" /> Grey</label>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Sweaters</label>
               </div>
-            </div>
-
-            <button class="apply_button">Apply Filters</button>
-          </aside>
-          <!-- PRODUCTS CARDS -->
-          <section class="products">
-            <div class="products_container">
-              <div class="product_card">
-                <img src="img/elastic-band.jpg" />
-                <h4>Elastic Band</h4>
-                <span class="price">$25</span>
-                <button class="add_cart">Add to Cart</button>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">T-Shirts</label>
               </div>
-
-              <div class="product_card">
-                <img src="img/band.jpg" />
-                <h4>Band</h4>
-                <span class="price">$1250</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/board_pushup.jpg" />
-                <h4>Push Ups Board</h4>
-                <span class="price">$30</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/dumbbells.jpeg" />
-                <h4>Dumbbells</h4>
-                <span class="price">$250</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/elliptical-machine.jpg" />
-                <h4>Elliptical Machine</h4>
-                <span class="price">$2000</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/elastic-band.jpg" />
-                <h4>Elastic Band</h4>
-                <span class="price">$45</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/elastic-band.jpg" />
-                <h4>Elastic Band</h4>
-                <span class="price">$25</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/band.jpg" />
-                <h4>Band</h4>
-                <span class="price">$1250</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/board_pushup.jpg" />
-                <h4>Push Ups Board</h4>
-                <span class="price">$30</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/dumbbells.jpeg" />
-                <h4>Dumbbells</h4>
-                <span class="price">$250</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/elliptical-machine.jpg" />
-                <h4>Elliptical Machine</h4>
-                <span class="price">$2000</span>
-                <button class="add_cart">Add to Cart</button>
-              </div>
-
-              <div class="product_card">
-                <img src="img/elastic-band.jpg" />
-                <h4>Elastic Band</h4>
-                <span class="price">$45</span>
-                <button class="add_cart">Add to Cart</button>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Shirts</label>
               </div>
             </div>
 
-            <!--------------- product card ---------------->
-          </section>
-          <div class="pagination">
-            <ul>
-              <li><a href="#">Back</a></li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">...</a></li>
-              <li><a href="#">9</a></li>
-              <li><a href="#">10</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
+            <div class="mb-3">
+              <strong>Collection</strong>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Spring/Summer</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">Autum/Winter</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">BERSHKA</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" />
+                <label class="form-check-label">KOTON</label>
+              </div>
+            </div>
+
+            <button class="btn btn-dark w-100 mt-3">Apply Filters</button>
           </div>
-        </div>
-      </section>
+        </aside>
+
+        <!-- PRODUCTS (RIGHT) -->
+        <section class="col-12 col-lg-9">
+          <div class="row g-4">
+            <!-- PRODUCT CARD -->
+
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-1.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Wool Blazer</h6>
+                  <p class="fw-bold h4 mb-2">$50</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- duplicate card -->
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-2.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Elegant A-line trousers</h6>
+                  <p class="fw-bold h4 mb-2">$72</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-3.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Midi Coat</h6>
+                  <p class="fw-bold h4 mb-2">$105</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-4.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Elegant Trousers</h6>
+                  <p class="fw-bold h4 mb-2">$28</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-5.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Knit Sweater Vest</h6>
+                  <p class="fw-bold h4 mb-2">$60</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-6.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">High-Waist Trousers</h6>
+                  <p class="fw-bold h4 mb-2">$30</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-7.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Mesh Sleeve Blouse</h6>
+                  <p class="fw-bold h4 mb-2">$32</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-8.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Retro Jeans</h6>
+                  <p class="fw-bold h4 mb-2">$70</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-9.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Denim Shirt</h6>
+                  <p class="fw-bold h4 mb-2">$34</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-10.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Belted Coat</h6>
+                  <p class="fw-bold h4 mb-2">$95</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-11.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Chunky Knit Sweater</h6>
+                  <p class="fw-bold h4 mb-2">$55</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-xl-3">
+              <div class="card h-100">
+                <img src="img/shop-12.png" class="card-img-top p-3" />
+                <div class="card-body">
+                  <h6 class="card-title">Blazer</h6>
+                  <p class="fw-bold h4 mb-2">$95</p>
+                  <button
+                    class="btn btn-outline-dark py-2 btn-sm w-100 rounded"
+                  >
+                    Add to Cart
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- repeat as needed -->
+          </div>
+
+          <!-- PAGINATION -->
+          <nav class="mt-5">
+            <ul class="pagination justify-content-center gap-3">
+              <li class="page-item">
+                <a class="page-link text-dark rounded" href="#">Back</a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+              <li class="page-item"><a class="page-link" href="#">5</a></li>
+              <li class="page-item">
+                <a class="page-link text-dark rounded" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </div>
     </main>
 
     <!-- MAIN END -->
