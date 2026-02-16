@@ -69,3 +69,11 @@ body {
 .font-bold {
   font-weight: bold;
 }
+
+.product-main-img {
+  height: 50vh;
+}
+
+.product-main-img img {
+  object-fit: cover;
+}

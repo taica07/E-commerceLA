@@ -194,7 +194,111 @@
     </header>
 
     <!-- MAIN -->
-    <h1>Product Page</h1>
+
+    <main id="main" class="py-5">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <!-- LEFT SIDE - PRODUCT IMAGES -->
+          <div class="col-12 col-lg-6 d-flex">
+            <div class="w-100">
+              <!-- MAIN IMAGE -->
+              <div class="product-main-img">
+                <img
+                  src="img/shop-1.png"
+                  class="w-100 h-100 rounded shadow-sm"
+                  alt="Product Image"
+                />
+              </div>
+
+              <!-- THUMBNAILS -->
+              <div class="d-flex justify-content-start gap-3 mt-3">
+                <img
+                  src="img/shop-1.png"
+                  width="90"
+                  class="border rounded p-1"
+                />
+                <img
+                  src="img/shop-1.png"
+                  width="90"
+                  class="border rounded p-1"
+                />
+                <img
+                  src="img/shop-1.png"
+                  width="90"
+                  class="border rounded p-1"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE - PRODUCT DETAILS -->
+          <div class="col-12 col-lg-6">
+            <h2 class="fw-bold mb-3">Wool Blazer</h2>
+
+            <!-- PRICE -->
+            <div class="mb-3">
+              <span class="text-muted text-decoration-line-through fs-5"
+                >$120</span
+              >
+              <span class="text-danger fw-bold fs-4 ms-2">$79</span>
+            </div>
+
+            <!-- RATING -->
+            <div class="mb-3 text-warning">
+              ★★★★☆
+              <span class="text-dark fs-6">(24 reviews)</span>
+            </div>
+
+            <!-- DESCRIPTION -->
+            <p class="text-muted">
+              This elegant black dress is perfect for special occasions. Made
+              from high-quality materials, comfortable and stylish.
+            </p>
+
+            <!-- SIZE -->
+            <div class="mb-3">
+              <label class="form-label fw-semibold">Size</label>
+              <select class="form-select w-50">
+                <option>Select size</option>
+                <option>XS</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+              </select>
+            </div>
+
+            <!-- QUANTITY -->
+            <div class="mb-4">
+              <label class="form-label fw-semibold">Quantity</label>
+              <input
+                type="number"
+                class="form-control w-25"
+                value="1"
+                min="1"
+              />
+            </div>
+
+            <!-- BUTTONS -->
+            <div class="d-flex gap-3">
+              <button class="btn btn-dark px-4">Add to Cart</button>
+              <button class="btn btn-outline-secondary">
+                <i class="bi bi-heart"></i>
+              </button>
+            </div>
+
+            <!-- EXTRA INFO -->
+            <div class="mt-4 border-top pt-3">
+              <p class="mb-1">
+                <strong>Free Shipping</strong> on orders over $50
+              </p>
+              <p class="mb-1"><strong>Delivery:</strong> 3–5 business days</p>
+              <p class="mb-0"><strong>Return Policy:</strong> 30 days return</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <!-- MAIN END -->
 
